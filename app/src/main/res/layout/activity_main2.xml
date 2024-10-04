@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/heading_SR"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        />
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/heading2"
+        android:background="@color/black"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/garis"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="40dp">
+
+            <TextView
+                android:id="@+id/heading_dalam"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/textbackgroud"
+                android:fontFamily="@font/poppins_black"
+                android:text="@string/heading_dalam"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/heading"
+                android:layout_marginTop="43dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="21dp" />
+
+            <EditText
+                android:id="@+id/edt_title"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/Title"
+                android:hint="Insert title"
+                android:inputType="text"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/Repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Repeat"
+                android:textColor="@color/black"
+                android:textSize="21dp" />
+
+            <Spinner
+                android:id="@+id/spinner_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner"
+                android:minHeight="40dp"
+                android:paddingLeft="10dp"
+                android:popupBackground="@color/grey2"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="21dp" />
+
+            <Button
+                android:id="@+id/btnPickDate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/baseline_date_range_24"
+                android:hint="insert date"
+                android:padding="8dp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:textSize="21dp" />
+
+            <TimePicker
+                android:id="@+id/time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="44dp"
+                android:background="@drawable/button1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/buttontext"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
